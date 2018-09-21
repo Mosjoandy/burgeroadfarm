@@ -1,10 +1,15 @@
 import React from 'react';
+import { Container, Col, Row } from "../components/grid"
 
 const Contact = () => (
 
-    <div>
-        Contact garbage
-    </div>
+    <Container>
+        <Row>
+            <Col size="xl-12">
+                Contact garbage
+        </Col>
+        </Row>
+    </Container>
 );
 
 export default Contact

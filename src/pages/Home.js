@@ -1,12 +1,15 @@
 import React from "react";
+import { Container, Col, Row } from "../components/grid"
 
 const Home = () => (
-  <div>
-    <h1>Home Page</h1>
-    <p>
-   Home page garbage
-    </p>
-  </div>
+
+  <Container>
+    <Row>
+      <Col size="xl-12">
+        Home garbage'
+      </Col>
+    </Row>
+  </Container>
 );
 
 export default Home;
