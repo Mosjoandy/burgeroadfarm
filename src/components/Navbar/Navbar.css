@@ -1,3 +1,18 @@
 nav {
-    background-color: salmon;
+    /* background-color: salmon; */
+    font-family: 'Special Elite', cursive;
+    margin: 1vh 0;
+}
+
+#navButtons {
+    padding: 0 30px;
+    border-right: 1px solid black;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#navButtonsLast {
+    padding: 0 30px;
+    text-decoration: underline;
+    font-weight: bold;
 }

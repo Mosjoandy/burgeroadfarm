@@ -1,13 +1,16 @@
 import React from 'react';
-import { Container, Col, Row } from "../components/grid"
+import "./Events.css";
+import { Container, Col, Row } from "../components/grid";
 
 const Events = () => (
 
     <Container>
         <Row>
             <Col size="xl-12">
-                Events garbage
-        </Col>
+                <div id="eventsTitle">
+                    (COMING SOON)
+                </div>
+            </Col>
         </Row>
     </Container>
 );

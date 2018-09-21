@@ -7,7 +7,7 @@ const Media = () => (
         <Row>
             <Col size="xl-12">
                 Media garbage
-        </Col>
+            </Col>
         </Row>
     </Container>
 );

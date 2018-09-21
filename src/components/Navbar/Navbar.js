@@ -14,22 +14,22 @@ class Navbar extends Component {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div className="navbar-nav">
-                            <Link to="/" className={window.location.pathname === "/" ? "nav-link active" : "nav-link"}>
+                            <Link to="/" id="navButtons" className={window.location.pathname === "/" ? "nav-link active" : "nav-link"}>
                                 Home
-                            </Link>
-                            <Link to="/Events" className={window.location.pathname === "/events" ? "nav-link active" : "nav-link"}>
+                            </Link> 
+                            <Link to="/Events" id="navButtons" className={window.location.pathname === "/events" ? "nav-link active" : "nav-link"}>
                                 Events
                             </Link>
-                            <Link to="/About" className={window.location.pathname === "/about" ? "nav-link active" : "nav-link"}>
+                            <Link to="/About" id="navButtons" className={window.location.pathname === "/about" ? "nav-link active" : "nav-link"}>
                                 About
                             </Link>
-                            <Link to="/Contact" className={window.location.pathname === "/contact" ? "nav-link active" : "nav-link"}>
+                            <Link to="/Contact" id="navButtons" className={window.location.pathname === "/contact" ? "nav-link active" : "nav-link"}>
                                 Contact
                             </Link>
-                            <Link to="/Directions" className={window.location.pathname === "/directions" ? "nav-link active" : "nav-link"}>
+                            <Link to="/Directions" id="navButtons" className={window.location.pathname === "/directions" ? "nav-link active" : "nav-link"}>
                                 Directions
                             </Link>
-                            <Link to="/Media" className={window.location.pathname === "/media" ? "nav-link active" : "nav-link"}>
+                            <Link to="/Media" id="navButtonsLast" className={window.location.pathname === "/media" ? "nav-link active" : "nav-link"}>
                                 Media
                             </Link>
                         </div>

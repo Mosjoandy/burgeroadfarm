@@ -7,7 +7,7 @@ const Contact = () => (
         <Row>
             <Col size="xl-12">
                 Contact garbage
-        </Col>
+            </Col>
         </Row>
     </Container>
 );

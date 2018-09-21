@@ -1,0 +1,18 @@
+#homeTitle {
+    font-family: 'Special Elite', cursive;
+    font-size: 7vh;
+    text-align: center;
+}
+
+#homeBody {
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 4vh;
+    text-align: center;
+    font-variant: small-caps; 
+}
+
+#cherry {
+    width: 15vw;
+    display: block;
+    margin: 5vh auto;
+}

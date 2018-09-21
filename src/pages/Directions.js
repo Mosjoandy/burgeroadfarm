@@ -7,7 +7,7 @@ const Directions = () => (
         <Row>
             <Col size="xl-12">
                 Directions garbage
-        </Col>
+            </Col>
         </Row>
     </Container>
 );
