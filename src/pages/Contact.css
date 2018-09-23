@@ -1,0 +1,27 @@
+#contactTitle {
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 6vh;
+}
+
+#contactBody {
+    font-family: 'Special Elite', cursive;
+    font-size: 2.5vh;
+}
+
+#contactIco {
+    height: 3vh;
+    margin: 1vw .5vh;
+}
+
+.contactLabel {
+    font-family: 'Special Elite', cursive;
+    font-size: 2.5vh;
+}
+
+.submitBtn:hover {
+    background-color: gray;
+}
+
+.submitBtn:active {
+    background-color: white;
+}
