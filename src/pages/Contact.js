@@ -30,7 +30,8 @@ class Contact extends React.Component {
         // console.log("Mailer: " + this.state.mailer);
         event.target.reset();
     };
-    // delay = { 1000}
+
+
     render() {
         return (
             <Container>
@@ -39,9 +40,8 @@ class Contact extends React.Component {
                         <Fade left>
                             <div id="contactTitle">
                                 Oscar Richard Grado
-                        </div>
+                            </div>
                         </Fade>
-
                         <div id="contactBody">
                             <Fade left delay={500}>
                                 <p>Owner/Operator</p>
@@ -92,11 +92,30 @@ class Contact extends React.Component {
                                 <label className="form-check-label contactLabel">Recieve Email Updates:</label>
                                 <input type="checkbox" className="ml-1 mt-3" name="mailer" />*/}
                                 </div>
-                                <button type="submit" className="btn contactLabel submitBtn" value="Submit">Sign Up</button>
+                                <button type="submit"
+                                    className="btn contactLabel submitBtn"
+                                    value="Submit"
+                                    data-toggle="modal"
+                                    data-target="#confirmation"
+                                >Sign Up</button>
                             </form>
                         </Slide>
                     </Col>
                 </Row>
+                <div className="modal fade" id="confirmation" tabIndex="-1" role="dialog" aria-labelledby="confirmation" aria-hidden="true">
+                    <div className="modal-dialog modal-dialog-centered" role="document">
+                        <div className="modal-content">
+                            <div className="modal-body">
+                                <img id="checkMark" src={require("../images/check.png")} alt="check mark" />
+                                <hr />
+                                <p>Thanks for signing up,</p>
+                                <h3>{this.state.name}!</h3>
+                                <p>Email updates will be sent to:</p>
+                                <h3>{this.state.email}</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </Container>
         );
     };

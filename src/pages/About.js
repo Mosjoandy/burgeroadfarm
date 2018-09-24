@@ -17,7 +17,8 @@ const About = () => (
                         <br />
                         <p>Our mission is to provide organically fruits and vegetables for everyone to enjoy.
                         We want to help people get back in touch with the food they eat and have a fun time
-                    at the farm!</p>
+                        at the farm!
+                        </p>
                     </div>
                     <div >
                         <img id="vetOwned" src={require("../images/vetowned.png")} alt="vet" />

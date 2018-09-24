@@ -1,17 +1,17 @@
 import React from 'react';
 import "./Directions.css"
 import { Container, Col, Row } from "../components/grid"
-import Slide from 'react-reveal/Slide';
+import Fade from 'react-reveal/Fade';
 
 const Directions = () => (
 
     <Container>
         <Row>
             <Col size="xl-7">
-                <Slide left>
+                <Fade left>
                     <div id="directionsTitle">
                         Directions
-                </div>
+                    </div>
                     <div id="directionsBody">
                         <ol type="1">
                             <li className="listDirect">From Sacramento, take CA-99 South to Stockton</li>
@@ -29,13 +29,13 @@ const Directions = () => (
                             <a href="tel:+12098171650" target="_blank" rel="noopener noreferrer">
                                 <img id="contactIco" src={require("../images/telephone.png")} alt="tele" />
                                 (209) 817-1650
-                        </a>
+                            </a>
                         </div>
                     </div>
-                </Slide>
+                </Fade>
             </Col>
             <Col size="xl-5">
-                <Slide right>
+                <Fade right>
                     <div id="directionsBody">
                         <div className="mapouter card">
                             <div className="gmap_canvas">
@@ -47,10 +47,10 @@ const Directions = () => (
                             <a className="text-center " href="https://goo.gl/maps/FVcHZag9vZJ2" target="_blank" rel="noopener noreferrer">
                                 <img id="contactIco" src={require("../images/map.png")} alt="gmap" />
                                 3000 Burge Rd, Stockton, CA 95215
-                        </a>
+                            </a>
                         </div>
                     </div>
-                </Slide>
+                </Fade>
             </Col>
         </Row>
     </Container>
