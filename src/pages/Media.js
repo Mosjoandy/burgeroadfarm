@@ -12,7 +12,7 @@ const IMAGES =
             thumbnail: "https://res.cloudinary.com/mosjoandy/image/upload/v1538512345/BRF/2.jpg",
             thumbnailWidth: 240,
             thumbnailHeight: 180
-            
+
         },
         {
             src: "https://res.cloudinary.com/mosjoandy/image/upload/v1538512334/BRF/16.jpg",
@@ -67,13 +67,53 @@ const IMAGES =
             thumbnail: "https://res.cloudinary.com/mosjoandy/image/upload/v1538512366/BRF/12.jpg",
             thumbnailWidth: 240,
             thumbnailHeight: 320
+        },
+        {
+            src: "https://res.cloudinary.com/mosjoandy/image/upload/v1538512361/BRF/11.jpg",
+            thumbnail: "https://res.cloudinary.com/mosjoandy/image/upload/v1538512361/BRF/11.jpg",
+            thumbnailWidth: 240,
+            thumbnailHeight: 320
+        },
+        {
+            src: "https://res.cloudinary.com/mosjoandy/image/upload/v1538512360/BRF/5.jpg",
+            thumbnail: "https://res.cloudinary.com/mosjoandy/image/upload/v1538512360/BRF/5.jpg",
+            thumbnailWidth: 240,
+            thumbnailHeight: 504
+        },
+        {
+            src: "https://res.cloudinary.com/mosjoandy/image/upload/v1538512360/BRF/10.jpg",
+            thumbnail: "https://res.cloudinary.com/mosjoandy/image/upload/v1538512360/BRF/10.jpg",
+            thumbnailWidth: 240,
+            thumbnailHeight: 320
+        },
+        {
+            src: "https://res.cloudinary.com/mosjoandy/image/upload/v1538512358/BRF/19.jpg",
+            thumbnail: "https://res.cloudinary.com/mosjoandy/image/upload/v1538512358/BRF/19.jpg",
+            thumbnailWidth: 256,
+            thumbnailHeight: 192
+        },
+        {
+            src: "https://res.cloudinary.com/mosjoandy/image/upload/v1538512340/BRF/1.jpg",
+            thumbnail: "https://res.cloudinary.com/mosjoandy/image/upload/v1538512340/BRF/1.jpg",
+            thumbnailWidth: 216,
+            thumbnailHeight: 384
+        },
+        {
+            src: "https://res.cloudinary.com/mosjoandy/image/upload/v1538512334/BRF/15.jpg",
+            thumbnail: "https://res.cloudinary.com/mosjoandy/image/upload/v1538512334/BRF/15.jpg",
+            thumbnailWidth: 320,
+            thumbnailHeight: 320
+        },
+        {
+            src: "https://res.cloudinary.com/mosjoandy/image/upload/v1538512349/BRF/17.jpg",
+            thumbnail: "https://res.cloudinary.com/mosjoandy/image/upload/v1538512349/BRF/17.jpg",
+            thumbnailWidth: 320,
+            thumbnailHeight: 320
         }
-        
+
     ]
 
-
 class Media extends React.Component {
-
 
     render() {
 
@@ -81,76 +121,14 @@ class Media extends React.Component {
             <Container>
                 <Row>
                     <Col size="xl-12">
-                        <Fade>
+                        <Fade top>
                             <Gallery
                                 images={IMAGES}
                                 enableImageSelection={false}
+                                rowHeight={250}
+                                margin={4}
                             />
                         </Fade>
-                        {/* <div className="card-columns ">
-                            <Fade cascade timeout={2000}>
-                                <div className="card border-0" >
-                                    <div className="card-body">
-                                        <img id="card-pic" className="rounded" src="https://via.placeholder.com/400x600" alt="about1" />
-                                    </div>
-                                </div>
-                                <div className="card border-0" >
-                                    <div className="card-body">
-                                        <img id="card-pic" className="rounded" src="https://via.placeholder.com/500x500" alt="about1" />
-                                    </div>
-                                </div>
-                                <div className="card border-0" >
-                                    <div className="card-body">
-                                        <img id="card-pic" className="rounded" src="https://via.placeholder.com/250x500" alt="about1" />
-                                    </div>
-                                </div>
-                                <div className="card border-0" >
-                                    <div className="card-body">
-                                        <img id="card-pic" className="rounded" src="https://via.placeholder.com/400x600" alt="about1" />
-                                    </div>
-                                </div>
-                                <div className="card border-0" >
-                                    <div className="card-body">
-                                        <img id="card-pic" className="rounded" src="https://via.placeholder.com/700x500" alt="about1" />
-                                    </div>
-                                </div>
-                                <div className="card border-0" >
-                                    <div className="card-body">
-                                        <img id="card-pic" className="rounded" src="https://via.placeholder.com/300x600" alt="about1" />
-                                    </div>
-                                </div>
-                                <div className="card border-0" >
-                                    <div className="card-body">
-                                        <img id="card-pic" className="rounded" src="https://via.placeholder.com/400x600" alt="about1" />
-                                    </div>
-                                </div>
-                                <div className="card border-0" >
-                                    <div className="card-body">
-                                        <img id="card-pic" className="rounded" src="https://via.placeholder.com/500x500" alt="about1" />
-                                    </div>
-                                </div>
-                                <div className="card border-0" >
-                                    <div className="card-body">
-                                        <img id="card-pic" className="rounded" src="https://via.placeholder.com/250x500" alt="about1" />
-                                    </div>
-                                </div>
-                                <div className="card border-0" >
-                                    <div className="card-body">
-                                        <img id="card-pic" className="rounded" src="https://via.placeholder.com/400x600" alt="about1" />
-                                    </div>
-                                </div>
-                                <div className="card border-0" >
-                                    <div className="card-body">
-                                        <img id="card-pic" className="rounded" src="https://via.placeholder.com/700x500" alt="about1" />
-                                    </div>
-                                </div>
-                                <div className="card border-0" >
-                                    <div className="card-body">
-                                        <img id="card-pic" className="rounded" src="https://via.placeholder.com/300x600" alt="about1" />
-                                    </div>
-                                </div>
-                            </Fade>
-                        </div> */}
                     </Col>
                 </Row>
             </Container>
