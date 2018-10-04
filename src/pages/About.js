@@ -28,12 +28,12 @@ const About = () => (
             <Col size="md-5">
                 <div id="aboutPics">
                     <Slide right>
-                        <div className="card">
-                            <img id="aboutPic1" src="https://via.placeholder.com/400x225" alt="about1" />
+                        {/* <div className="card">
+                            <img id="aboutPic1" src={require("../images/media/about1.jpg")} alt="about1" />
                         </div>
-                        <br />
-                        <div className="card">
-                            <img id="aboutPic2" src="https://via.placeholder.com/400x225" alt="about2" />
+                        <br /> */}
+                        <div className="card border-0">
+                            <img className="rounded" id="aboutPic2" src={require("../images/media/about2.jpeg")} alt="about2" />
                         </div>
                     </Slide>
                 </div>

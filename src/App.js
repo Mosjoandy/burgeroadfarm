@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Directions from "./pages/Directions";
 import Media from "./pages/Media";
+import Emailer from "./pages/Emailer";
 import './App.css';
 
 
@@ -20,6 +21,7 @@ const App = () => (
       <Route path="/contact" component={Contact} />
       <Route path="/directions" component={Directions} />
       <Route path="/media" component={Media} />
+      <Route path="/bossjontue" component={Emailer} />
     </div>
   </Router>
 );

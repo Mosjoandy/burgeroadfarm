@@ -3,6 +3,7 @@ import "./Contact.css";
 import { Container, Col, Row } from "../components/grid";
 import Slide from 'react-reveal/Slide';
 import Fade from 'react-reveal/Fade';
+import firebase from "../firebase.js";
 
 class Contact extends React.Component {
 
@@ -11,6 +12,7 @@ class Contact extends React.Component {
         this.state = {
             email: "",
             name: "",
+            submitted: false,
             // comments: "",
             // mailer: "false"
         };
@@ -26,8 +28,15 @@ class Contact extends React.Component {
         event.preventDefault();
         console.log("Name: " + this.state.name);
         console.log("Email: " + this.state.email);
-        // console.log("Comment: " + this.state.comments);
-        // console.log("Mailer: " + this.state.mailer);
+
+        const mailer = firebase.database().ref("mailer");
+        const info = {
+            name: this.state.name,
+            email: this.state.email
+        };
+        mailer.push(info);
+
+        this.setState({ submitted: true });
         event.target.reset();
     };
 
@@ -68,16 +77,51 @@ class Contact extends React.Component {
 
                     </Col>
                     <Col size="md-6">
-                        <Slide right>
-                            <div id="contactTitle">
-                                Contact
-                        </div>
-                            <div id="contactBody">
-                                <p>Sign up to be part of mailing list and be notified of upcoming events at
-                                    the farm like cherry season opening.
-                            </p>
-                            </div>
-                            <form onSubmit={this.handleSubmit}>
+
+                        {!this.state.submitted ? (
+                            <Slide right>
+                                <div id="contactTitle">
+                                    Contact
+                                    </div>
+                                <div id="contactBody">
+                                    <p>Sign up to be part of mailing list and be notified of upcoming events at
+                                        the farm like cherry season opening.
+                                        </p>
+                                </div>
+
+                                <form onSubmit={this.handleSubmit}>
+                                    <div className="form-group">
+                                        <label className="contactLabel">Name: </label>
+                                        <input type="text" className="form-control mt-1 mb-3" name="name" onChange={this.handleChange} required />
+
+                                        <label className="contactLabel">Email: </label>
+                                        <input type="email" className="form-control mt-1 mb-3" name="email" onChange={this.handleChange} required />
+
+                                    </div>
+                                    <button type="submit"
+                                        className="btn contactLabel submitBtn"
+                                        value="Submit"
+                                        data-toggle="modal"
+                                        data-target="#confirmation"
+                                    >Sign Up</button>
+                                </form>
+                            </Slide>
+                        ) : (
+
+                                <div className="modal-body">
+                                    <Slide top>
+                                        <img id="checkMark" src={require("../images/check.png")} alt="check mark" />
+                                    </Slide>
+                                    <Slide bottom cascade>
+                                        <p>Thanks for signing up,</p>
+                                        <h3>{this.state.name}!</h3>
+                                        <p>Email updates will be sent to:</p>
+                                        <h3>{this.state.email}</h3>
+                                    </Slide>
+                                </div>
+
+                            )}
+                        {/* <form onSubmit={this.handleSubmit}>
                                 <div className="form-group">
                                     <label className="contactLabel">Name: </label>
                                     <input type="text" className="form-control mt-1 mb-3" name="name" onChange={this.handleChange} required />
@@ -85,12 +129,6 @@ class Contact extends React.Component {
                                     <label className="contactLabel">Email: </label>
                                     <input type="email" className="form-control mt-1 mb-3" name="email" onChange={this.handleChange} required />
 
-                                    {/* <label className="contactLabel">Comments: </label> 
-                                <textarea type="text" className="form-control mt-1 mb-3" rows="3" name="comments" onChange={this.handleChange} />
-
-
-                                <label className="form-check-label contactLabel">Recieve Email Updates:</label>
-                                <input type="checkbox" className="ml-1 mt-3" name="mailer" />*/}
                                 </div>
                                 <button type="submit"
                                     className="btn contactLabel submitBtn"
@@ -98,11 +136,11 @@ class Contact extends React.Component {
                                     data-toggle="modal"
                                     data-target="#confirmation"
                                 >Sign Up</button>
-                            </form>
-                        </Slide>
+                            </form> */}
+
                     </Col>
                 </Row>
-                <div className="modal fade" id="confirmation" tabIndex="-1" role="dialog" aria-labelledby="confirmation" aria-hidden="true">
+                {/* <div className="modal fade" id="confirmation" tabIndex="-1" role="dialog" aria-labelledby="confirmation" aria-hidden="true">
                     <div className="modal-dialog modal-dialog-centered" role="document">
                         <div className="modal-content">
                             <div className="modal-body">
@@ -115,7 +153,7 @@ class Contact extends React.Component {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </Container>
         );
     };
