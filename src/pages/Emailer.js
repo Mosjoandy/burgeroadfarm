@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Col, Row } from "../components/grid";
 import "./Emailer.css"
-// import Slide from 'react-reveal/Slide';
+import Fade from 'react-reveal/Fade';
 // import Fade from 'react-reveal/Fade';
 import firebase from "../firebase";
 
@@ -13,7 +13,7 @@ class Emailer extends React.Component {
             // email: "",
             // name: "",
             mailerList: [],
-
+            copySuccess: "",
         };
         this.removeItem = this.removeItem.bind(this);
     };
@@ -42,6 +42,15 @@ class Emailer extends React.Component {
         emailer.remove();
     };
 
+    copyToClipboard = (e) => {
+        this.textArea.select();
+        document.execCommand('copy');
+        // This is just personal preference.
+        // I prefer to not show the the whole text area selected.
+        e.target.focus();
+        this.setState({ copySuccess: 'Copied!' });
+    };
+    
     render() {
         return (
             <Container>
