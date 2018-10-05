@@ -1,8 +1,6 @@
 import React from 'react';
 import { Container, Col, Row } from "../components/grid";
 import "./Emailer.css"
-import Fade from 'react-reveal/Fade';
-// import Fade from 'react-reveal/Fade';
 import firebase from "../firebase";
 
 class Emailer extends React.Component {
@@ -10,12 +8,9 @@ class Emailer extends React.Component {
     constructor() {
         super()
         this.state = {
-            // email: "",
-            // name: "",
             mailerList: [],
-            copySuccess: "",
         };
-        this.removeItem = this.removeItem.bind(this);
+        this.copyToClipboard = this.copyToClipboard.bind(this)
     };
 
     componentDidMount() {
@@ -33,7 +28,6 @@ class Emailer extends React.Component {
             this.setState({
                 mailerList: newState
             });
-            console.log(this.state.mailerList)
         });
     };
 
@@ -42,16 +36,19 @@ class Emailer extends React.Component {
         emailer.remove();
     };
 
-    copyToClipboard = (e) => {
-        this.textArea.select();
-        document.execCommand('copy');
-        // This is just personal preference.
-        // I prefer to not show the the whole text area selected.
-        e.target.focus();
-        this.setState({ copySuccess: 'Copied!' });
-    };
-    
+    copyToClipboard() {
+        let theList = this.state.mailerList.map((index) =>
+            " " + index.email)
+        let textField = document.createElement('textarea')
+        textField.innerText = theList
+        document.body.appendChild(textField)
+        textField.select()
+        document.execCommand('copy')
+        textField.remove()
+    }
+
     render() {
+
         return (
             <Container>
                 <Row>
@@ -74,10 +71,22 @@ class Emailer extends React.Component {
                         </table>
                     </Col>
                     <Col size="md-5">
-                        {this.state.mailerList.map((mailer) =>
-                            <span key={mailer.id}>{mailer.email},{" "}
-                            </span>
-                        )}
+                        <button
+                            className="btn btn-success"
+                            type="button"
+                            onClick={this.copyToClipboard}
+                            data-toggle="popover"
+                            data-trigger="focus"
+                            title="Copy All"
+                            data-content="Copied to Clipboard"
+                        >
+                            Copy All
+                        </button>
+                        <div className="card-body">
+                            {this.state.mailerList.map((mailer) =>
+                                <span key={mailer.id}>{mailer.email}, </span>
+                            )}
+                        </div>
                     </Col>
                 </Row>
             </Container>
