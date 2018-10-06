@@ -21,27 +21,27 @@ class Navbar extends Component {
                             <div className="navbar-nav">
                                 <li><Link to="/" id="navButtons" className={window.location.pathname === "/" ? "nav-link active" : "nav-link"}>
                                     Home
-                            </Link>
+                                    </Link>
                                 </li>
                                 <li><Link to="/Events" id="navButtons" className={window.location.pathname === "/events" ? "nav-link active" : "nav-link"}>
                                     Events
-                            </Link>
+                                    </Link>
                                 </li>
                                 <li><Link to="/About" id="navButtons" className={window.location.pathname === "/about" ? "nav-link active" : "nav-link"}>
                                     About
-                            </Link>
+                                    </Link>
                                 </li>
                                 <li><Link to="/Contact" id="navButtons" className={window.location.pathname === "/contact" ? "nav-link active" : "nav-link"}>
                                     Contact
-                            </Link>
+                                    </Link>
                                 </li>
                                 <li><Link to="/Directions" id="navButtons" className={window.location.pathname === "/directions" ? "nav-link active" : "nav-link"}>
                                     Directions
-                            </Link>
+                                    </Link>
                                 </li>
                                 <li><Link to="/Media" id="navButtonsLast" className={window.location.pathname === "/media" ? "nav-link active" : "nav-link"}>
                                     Media
-                            </Link>
+                                    </Link>
                                 </li>
                             </div>
                         </div>

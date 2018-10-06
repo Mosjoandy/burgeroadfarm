@@ -3,6 +3,7 @@ import { Container, Col, Row } from "../components/grid";
 import "./Emailer.css"
 import firebase from "../firebase";
 import Fade from "react-reveal/Fade";
+import Login from "./auth";
 
 class Emailer extends React.Component {
 
@@ -10,7 +11,7 @@ class Emailer extends React.Component {
         super()
         this.state = {
             mailerList: [],
-            copied: false,
+            copied: false
         };
         this.copyToClipboard = this.copyToClipboard.bind(this)
     };
@@ -48,7 +49,7 @@ class Emailer extends React.Component {
         textField.select()
         document.execCommand('copy')
         textField.remove()
-    }
+    };
 
     render() {
 
@@ -78,11 +79,15 @@ class Emailer extends React.Component {
                         </Fade>
                     </Col>
                     <Col size="md-5">
+                        <div>
+                            <Login />
+                        </div>
+
                         {!this.state.copied ?
                             <Fade>
                                 <button className="btn btn-success" type="button" onClick={this.copyToClipboard}>
                                     Copy All
-                                </button>
+                               </button>
                             </Fade>
                             :
                             <Fade>
