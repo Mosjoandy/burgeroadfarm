@@ -9,55 +9,9 @@ import Directions from "./pages/Directions";
 import Media from "./pages/Media";
 import NoMatch from "./pages/NoMatch";
 import Login from "./pages/Authenticate";
-import { auth, provider } from "./firebase";
 import './App.css';
 
 class App extends React.Component {
-
-  constructor() {
-    super();
-    this.state = {
-      user: null,
-      current: "/bossjontue"
-    };
-    this.login = this.login.bind(this);
-    this.logout = this.logout.bind(this);
-  };
-
-  logout() {
-    auth.signOut()
-      .then(() => {
-        this.setState({
-          user: null
-        });
-      });
-  };
-
-  login() {
-    auth.signInWithPopup(provider)
-      .then((result) => {
-        const user = result.user;
-        this.setState({
-          user
-        });
-      });
-  };
-
-  componentDidMount() {
-    auth.onAuthStateChanged((user) => {
-      if (user) {
-        this.setState({ user });
-      };
-    });
-  };
-
-  routeCheck = (string) => {
-    if (this.state.current !== string) {
-      this.setState({
-        current: string
-      });
-    };
-  };
 
   render() {
     return (

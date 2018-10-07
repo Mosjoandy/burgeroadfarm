@@ -9,8 +9,8 @@ class Navbar extends Component {
             <Container>
                 <nav className="navbar navbar-expand-lg navbar-light">
                     <Col size="md-3">
-                        <Link to="/" className={window.location.pathname === "/"}>
-                            <img id="burgeLogo" src={require("../../images/burge.png")} alt="brfLogo" />
+                        <Link to="/">
+                        <img id="burgeLogo" src={require("../../images/burge.png")} alt="brfLogo" />
                         </Link>
                     </Col>
                     <Col size="md-9">

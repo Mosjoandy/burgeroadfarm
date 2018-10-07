@@ -3,7 +3,6 @@ import { Col, Row } from "../components/grid";
 import "./Emailer.css"
 import firebase from "../firebase";
 import Fade from "react-reveal/Fade";
-// import Login from "./auth";
 
 class Emailer extends React.Component {
 
