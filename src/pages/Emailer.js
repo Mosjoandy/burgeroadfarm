@@ -1,9 +1,9 @@
 import React from 'react';
-import { Container, Col, Row } from "../components/grid";
+import { Col, Row } from "../components/grid";
 import "./Emailer.css"
 import firebase from "../firebase";
 import Fade from "react-reveal/Fade";
-import Login from "./auth";
+// import Login from "./auth";
 
 class Emailer extends React.Component {
 
@@ -54,54 +54,49 @@ class Emailer extends React.Component {
     render() {
 
         return (
-            <Container>
-                <Row>
-                    <Col size="md-7">
-                        <Fade>
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>Email</th>
-                                        <th className="text-center">Remove</th>
+            <Row>
+                <Col size="md-7">
+                    <Fade>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th className="text-center">Remove</th>
+                                </tr>
+                                {this.state.mailerList.map((mailer) =>
+                                    <tr key={mailer.id}>
+                                        <Fade delay={1000} duration={2000}>
+                                            <td>{mailer.name}</td>
+                                            <td>{mailer.email}</td>
+                                            <td className="text-center"><button type="button" className="btn btn-danger" onClick={() => this.removeItem(mailer.id)}>X</button></td>
+                                        </Fade>
                                     </tr>
-                                    {this.state.mailerList.map((mailer) =>
-                                        <tr key={mailer.id}>
-                                            <Fade delay={1000} duration={2000}>
-                                                <td>{mailer.name}</td>
-                                                <td>{mailer.email}</td>
-                                                <td className="text-center"><button type="button" className="btn btn-danger" onClick={() => this.removeItem(mailer.id)}>X</button></td>
-                                            </Fade>
-                                        </tr>
-                                    )}
-                                </tbody>
-                            </table>
-                        </Fade>
-                    </Col>
-                    <Col size="md-5">
-                        <div>
-                            <Login />
-                        </div>
+                                )}
+                            </tbody>
+                        </table>
+                    </Fade>
+                </Col>
+                <Col size="md-5">
 
-                        {!this.state.copied ?
-                            <Fade>
-                                <button className="btn btn-success" type="button" onClick={this.copyToClipboard}>
-                                    Copy All
+                    {!this.state.copied ?
+                        <Fade>
+                            <button className="btn btn-success" type="button" onClick={this.copyToClipboard}>
+                                Copy All
                                </button>
-                            </Fade>
-                            :
-                            <Fade>
-                                <img className="pl-2" id="smolCheck" src={require("../images/check.png")} alt="check mark" /><span>Copied to Clipboard</span>
-                            </Fade>
-                        }
-                        <div className="card-body">
-                            {this.state.mailerList.map((mailer) =>
-                                <span key={mailer.id}>{mailer.email}, </span>
-                            )}
-                        </div>
-                    </Col>
-                </Row>
-            </Container>
+                        </Fade>
+                        :
+                        <Fade>
+                            <img className="pl-2" id="smolCheck" src={require("../images/check.png")} alt="check mark" /><span>Copied to Clipboard</span>
+                        </Fade>
+                    }
+                    <div className="card-body">
+                        {this.state.mailerList.map((mailer) =>
+                            <span key={mailer.id}>{mailer.email}, </span>
+                        )}
+                    </div>
+                </Col>
+            </Row>
         );
     };
 };

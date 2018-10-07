@@ -7,8 +7,8 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Directions from "./pages/Directions";
 import Media from "./pages/Media";
-import Emailer from "./pages/Emailer";
 import NoMatch from "./pages/NoMatch";
+import Login from "./pages/Authenticate";
 import { auth, provider } from "./firebase";
 import './App.css';
 
@@ -72,7 +72,7 @@ class App extends React.Component {
             <Route exact path="/contact" component={Contact} />
             <Route exact path="/directions" component={Directions} />
             <Route exact path="/media" component={Media} />
-            <Route exact path="/bossjontue" component={Emailer} />
+            <Route exact path="/bossjontue" component={Login} />
             <Route component={NoMatch} />
           </Switch>
         </div>
