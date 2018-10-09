@@ -1,9 +1,9 @@
 import React from 'react';
 import "./Contact.css";
-import { Container, Col, Row } from "../components/grid";
+import { Container, Col, Row } from "../../components/grid";
 import Slide from 'react-reveal/Slide';
 import Fade from 'react-reveal/Fade';
-import firebase from "../firebase.js";
+import firebase from "../../utils/firebase";
 
 class Contact extends React.Component {
 
@@ -57,19 +57,19 @@ class Contact extends React.Component {
                             </Fade>
                             <Fade left delay={700}>
                                 <div><a href="tel:+12098171650" target="_blank" rel="noopener noreferrer">
-                                    <img id="contactIco" src={require("../images/telephone.png")} alt="tele" />
+                                    <img id="contactIco" src={require("../../images/telephone.png")} alt="tele" />
                                     (209) 817-1650
                             </a></div>
                             </Fade>
                             <Fade left delay={900}>
                                 <div><a href="mailto:burgeroadfarm@gmail.com" target="_blank" rel="noopener noreferrer">
-                                    <img id="contactIco" src={require("../images/email.png")} alt="mail" />
+                                    <img id="contactIco" src={require("../../images/email.png")} alt="mail" />
                                     burgeroadfarm@gmail.com
                             </a></div>
                             </Fade>
                             <Fade left delay={1100}>
                                 <div><a href="https://goo.gl/maps/FVcHZag9vZJ2" target="_blank" rel="noopener noreferrer">
-                                    <img id="contactIco" src={require("../images/map.png")} alt="gmap" />
+                                    <img id="contactIco" src={require("../../images/map.png")} alt="gmap" />
                                     3000 Burge Rd, Stockton, CA 95215
                             </a></div>
                             </Fade>
@@ -110,7 +110,7 @@ class Contact extends React.Component {
 
                                 <div className="modal-body">
                                     <Slide top>
-                                        <img id="checkMark" src={require("../images/check.png")} alt="check mark" />
+                                        <img id="checkMark" src={require("../../images/check.png")} alt="check mark" />
                                     </Slide>
                                     <Slide bottom cascade>
                                         <p>Thanks for signing up,</p>

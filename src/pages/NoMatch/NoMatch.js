@@ -1,6 +1,6 @@
 import React from 'react';
 import "./NoMatch.css";
-import { Container, Col, Row } from "../components/grid";
+import { Container, Col, Row } from "../../components/grid";
 
 const NoMatch = () => (
 

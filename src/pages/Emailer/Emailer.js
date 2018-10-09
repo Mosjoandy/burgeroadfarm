@@ -1,7 +1,7 @@
 import React from 'react';
-import { Col, Row } from "../components/grid";
+import { Col, Row } from "../../components/grid";
 import "./Emailer.css"
-import firebase from "../firebase";
+import firebase from "../../utils/firebase";
 import Fade from "react-reveal/Fade";
 
 class Emailer extends React.Component {
@@ -86,7 +86,7 @@ class Emailer extends React.Component {
                         </Fade>
                         :
                         <Fade>
-                            <img className="pl-2" id="smolCheck" src={require("../images/check.png")} alt="check mark" /><span>Copied to Clipboard</span>
+                            <img className="pl-2" id="smolCheck" src={require("../../images/check.png")} alt="check mark" /><span>Copied to Clipboard</span>
                         </Fade>
                     }
                     <div className="card-body">

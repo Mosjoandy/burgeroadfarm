@@ -1,6 +1,6 @@
 import React from 'react';
 import "./About.css";
-import { Container, Col, Row } from "../components/grid";
+import { Container, Col, Row } from "../../components/grid";
 import Slide from 'react-reveal/Slide';
 
 const About = () => (
@@ -21,7 +21,7 @@ const About = () => (
                         </p>
                     </div>
                     <div >
-                        <img id="vetOwned" src={require("../images/vetowned.png")} alt="vet" />
+                        <img id="vetOwned" src={require("../../images/vetowned.png")} alt="vet" />
                     </div>
                 </Slide>
             </Col>
@@ -33,7 +33,7 @@ const About = () => (
                         </div>
                         <br /> */}
                         <div className="card border-0">
-                            <img className="rounded" id="aboutPic2" src={require("../images/media/about2.jpeg")} alt="about2" />
+                            <img className="rounded" id="aboutPic2" src={require("../../images/media/about2.jpeg")} alt="about2" />
                         </div>
                     </Slide>
                 </div>

@@ -1,7 +1,7 @@
 import React from "react"
 import { Container, Col, Row } from "../components/grid";
-import { auth, provider } from "../firebase";
-import Emailer from "./Emailer";
+import { auth, provider } from "../utils/firebase";
+import Emailer from "../pages/Emailer/Emailer";
 
 class Login extends React.Component {
 
@@ -55,7 +55,6 @@ class Login extends React.Component {
                                         <br />
                                         <button type="btn" className="btn button-secondary" onClick={this.logout}>Log Out</button>
                                     </div>
-
                                 </Col>
                             </Row>
                             <hr />
@@ -66,9 +65,9 @@ class Login extends React.Component {
                             <div className="card-body text-center">
                                 <div>You've reached a nondescript door.</div>
                                 <br />
-                                <button type="btn" className="btn button-primary" onClick={this.login}>Log In</button>
-                                <br /><br />
-                                <div>If you are the boss, please login.</div>
+                                <div>If you are the boss, please {" "}
+                                    <button type="btn" className="btn button-primary" onClick={this.login}>Knock</button>
+                                </div>
                             </div>
                         </Col>
                 }

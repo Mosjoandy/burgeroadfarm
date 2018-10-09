@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Directions.css"
-import { Container, Col, Row } from "../components/grid"
+import { Container, Col, Row } from "../../components/grid"
 import Fade from 'react-reveal/Fade';
 
 const Directions = () => (
@@ -27,7 +27,7 @@ const Directions = () => (
                         </ol>
                         <div className="ml-3">
                             <a href="tel:+12098171650" target="_blank" rel="noopener noreferrer">
-                                <img id="contactIco" src={require("../images/telephone.png")} alt="tele" />
+                                <img id="contactIco" src={require("../../images/telephone.png")} alt="tele" />
                                 (209) 817-1650
                             </a>
                         </div>
@@ -45,7 +45,7 @@ const Directions = () => (
                         </div>
                         <div className="card-footer bg-white">
                             <a className="text-center " href="https://goo.gl/maps/FVcHZag9vZJ2" target="_blank" rel="noopener noreferrer">
-                                <img id="contactIco" src={require("../images/map.png")} alt="gmap" />
+                                <img id="contactIco" src={require("../../images/map.png")} alt="gmap" />
                                 3000 Burge Rd, Stockton, CA 95215
                             </a>
                         </div>

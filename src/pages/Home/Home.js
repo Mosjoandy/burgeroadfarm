@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import { Container, Col, Row } from "../components/grid";
+import { Container, Col, Row } from "../../components/grid";
 import Slide from "react-reveal/Slide";
 import Bounce from 'react-reveal/Bounce';
 
@@ -22,7 +22,7 @@ const Home = () => (
         </Slide>
         <Bounce>
           <div>
-            <img id="cherry" src={require("../images/cherry.png")} alt="cherryTriple" />
+            <img id="cherry" src={require("../../images/cherry.png")} alt="cherryTriple" />
           </div>
         </Bounce>
       </Col>

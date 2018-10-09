@@ -1,13 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
-import Home from "./pages/Home";
-import Events from "./pages/Events";
-import Contact from "./pages/Contact";
-import About from "./pages/About";
-import Directions from "./pages/Directions";
-import Media from "./pages/Media";
-import NoMatch from "./pages/NoMatch";
+import Home from "./pages/Home/Home";
+import Events from "./pages/Events/Events";
+import Contact from "./pages/Contact/Contact";
+import About from "./pages/About/About";
+import Directions from "./pages/Directions/Directions";
+import Media from "./pages/Media/Media";
+import NoMatch from "./pages/NoMatch/NoMatch";
 import Login from "./pages/Authenticate";
 import './App.css';
 
