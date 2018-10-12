@@ -13,8 +13,6 @@ class Contact extends React.Component {
             email: "",
             name: "",
             submitted: false,
-            // comments: "",
-            // mailer: "false"
         };
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -39,7 +37,6 @@ class Contact extends React.Component {
         this.setState({ submitted: true });
         event.target.reset();
     };
-
 
     render() {
         return (
@@ -74,10 +71,8 @@ class Contact extends React.Component {
                             </a></div>
                             </Fade>
                         </div>
-
                     </Col>
                     <Col size="md-6">
-
                         {!this.state.submitted ? (
                             <Slide right>
                                 <div id="contactTitle">
@@ -88,7 +83,6 @@ class Contact extends React.Component {
                                         the farm like cherry season opening.
                                         </p>
                                 </div>
-
                                 <form onSubmit={this.handleSubmit}>
                                     <div className="form-group">
                                         <label className="contactLabel">Name: </label>
@@ -107,7 +101,6 @@ class Contact extends React.Component {
                                 </form>
                             </Slide>
                         ) : (
-
                                 <div className="modal-body">
                                     <Slide top>
                                         <img id="checkMark" src={require("../../images/check.png")} alt="check mark" />
@@ -119,41 +112,9 @@ class Contact extends React.Component {
                                         <h3>{this.state.email}</h3>
                                     </Slide>
                                 </div>
-
                             )}
-                        {/* <form onSubmit={this.handleSubmit}>
-                                <div className="form-group">
-                                    <label className="contactLabel">Name: </label>
-                                    <input type="text" className="form-control mt-1 mb-3" name="name" onChange={this.handleChange} required />
-
-                                    <label className="contactLabel">Email: </label>
-                                    <input type="email" className="form-control mt-1 mb-3" name="email" onChange={this.handleChange} required />
-
-                                </div>
-                                <button type="submit"
-                                    className="btn contactLabel submitBtn"
-                                    value="Submit"
-                                    data-toggle="modal"
-                                    data-target="#confirmation"
-                                >Sign Up</button>
-                            </form> */}
-
                     </Col>
                 </Row>
-                {/* <div className="modal fade" id="confirmation" tabIndex="-1" role="dialog" aria-labelledby="confirmation" aria-hidden="true">
-                    <div className="modal-dialog modal-dialog-centered" role="document">
-                        <div className="modal-content">
-                            <div className="modal-body">
-                                <img id="checkMark" src={require("../images/check.png")} alt="check mark" />
-                                <hr />
-                                <p>Thanks for signing up,</p>
-                                <h3>{this.state.name}!</h3>
-                                <p>Email updates will be sent to:</p>
-                                <h3>{this.state.email}</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
             </Container>
         );
     };

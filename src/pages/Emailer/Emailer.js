@@ -77,7 +77,6 @@ class Emailer extends React.Component {
                     </Fade>
                 </Col>
                 <Col size="md-5">
-
                     {!this.state.copied ?
                         <Fade>
                             <button className="btn btn-success" type="button" onClick={this.copyToClipboard}>
