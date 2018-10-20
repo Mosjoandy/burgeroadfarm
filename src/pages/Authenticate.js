@@ -11,7 +11,8 @@ class Login extends React.Component {
             user: null,
             current: "/bossjontue",
             boss: "",
-            userID: ""
+            userID: "",
+            admin: false,
         };
         this.login = this.login.bind(this);
         this.logout = this.logout.bind(this);
@@ -21,7 +22,7 @@ class Login extends React.Component {
         auth.signOut()
             .then(() => {
                 // this.setState({ user: null });
-                this.setState({ userID: "" });
+                this.setState({ admin: false});
             });
     };
 
@@ -32,22 +33,27 @@ class Login extends React.Component {
                 this.setState({ user });
                 this.setState({ boss: user.displayName });
                 this.setState({ userID: user.uid });
+                if (this.state.userID === "bygu8YfsSWhtW6aqcU8ZuQGNWws1" || "aXKEZAlJKpdlb0wm1NWEFHHQgFh1") {
+                    this.setState({ admin: true })
+                }
             });
     };
 
-    componentDidMount() {
-        auth.onAuthStateChanged((user) => {
-            if (user.uid === "aXKEZAlJKpdlb0wm1NWEFHHQgFh1") {
-                this.setState({ user });
-            };
-        });
-    };
+    // componentDidMount() {
+    //     auth.onAuthStateChanged((user) => {
+    //         if (user.uid === "aXKEZAlJKpdlb0wm1NWEFHHQgFh1") {
+    //             this.setState({ user });
+    //         };
+    //     });
+    // };
 
     render() {
         return (
             <Container>
                 {
-                    this.state.userID === "aXKEZAlJKpdlb0wm1NWEFHHQgFh1" ?
+                    this.state.admin === true
+
+                    ?
                         <div>
                             <Row>
                                 <Col size="md-12">
