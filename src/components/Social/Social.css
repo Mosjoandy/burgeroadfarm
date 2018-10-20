@@ -1,0 +1,10 @@
+#socialBar {
+    position: fixed;
+    left: 0;
+    top: 25vh;
+}
+
+#socialIco {
+    width: 3rem;
+    margin: 2px;
+}

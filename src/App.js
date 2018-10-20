@@ -9,6 +9,7 @@ import Directions from "./pages/Directions/Directions";
 import Media from "./pages/Media/Media";
 import NoMatch from "./pages/NoMatch/NoMatch";
 import Login from "./pages/Authenticate";
+import Social from "./components/Social/Social";
 import './App.css';
 
 class App extends React.Component {
@@ -17,7 +18,9 @@ class App extends React.Component {
     return (
 
       <Router>
+
         <div>
+          <Social />
           <Navbar />
           <Switch>
             <Route exact path="/" component={Home} />

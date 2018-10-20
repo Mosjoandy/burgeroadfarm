@@ -43,63 +43,72 @@ class Contact extends React.Component {
             <Container>
                 <Row>
                     <Col size="md-6">
-                        <Fade left>
-                            <div id="contactTitle">
-                                Oscar Richard Grado
+                        <Fade duration={1000}>
+                            <div className="card">
+                                <Fade left>
+                                    <div id="contactTitle">
+                                        Oscar Richard Grado
+                            </div>
+                                </Fade>
+                                <div id="contactBody">
+                                    <Fade left delay={500}>
+                                        <p>Owner/Operator</p>
+                                    </Fade>
+                                    <Fade left delay={700}>
+                                        <div><a href="tel:+12098171650" target="_blank" rel="noopener noreferrer">
+                                            <img id="contactIco" src={require("../../images/telephone.png")} alt="tele" />
+                                            (209) 817-1650
+                            </a></div>
+                                    </Fade>
+                                    <Fade left delay={900}>
+                                        <div><a href="mailto:burgeroadfarm@gmail.com" target="_blank" rel="noopener noreferrer">
+                                            <img id="contactIco" src={require("../../images/email.png")} alt="mail" />
+                                            burgeroadfarm@gmail.com
+                            </a></div>
+                                    </Fade>
+                                    <Fade left delay={1100}>
+                                        <div><a href="https://goo.gl/maps/FVcHZag9vZJ2" target="_blank" rel="noopener noreferrer">
+                                            <img id="contactIco" src={require("../../images/map.png")} alt="gmap" />
+                                            3000 Burge Rd, Stockton, CA 95215
+                            </a></div>
+                                    </Fade>
+                                </div>
                             </div>
                         </Fade>
-                        <div id="contactBody">
-                            <Fade left delay={500}>
-                                <p>Owner/Operator</p>
-                            </Fade>
-                            <Fade left delay={700}>
-                                <div><a href="tel:+12098171650" target="_blank" rel="noopener noreferrer">
-                                    <img id="contactIco" src={require("../../images/telephone.png")} alt="tele" />
-                                    (209) 817-1650
-                            </a></div>
-                            </Fade>
-                            <Fade left delay={900}>
-                                <div><a href="mailto:burgeroadfarm@gmail.com" target="_blank" rel="noopener noreferrer">
-                                    <img id="contactIco" src={require("../../images/email.png")} alt="mail" />
-                                    burgeroadfarm@gmail.com
-                            </a></div>
-                            </Fade>
-                            <Fade left delay={1100}>
-                                <div><a href="https://goo.gl/maps/FVcHZag9vZJ2" target="_blank" rel="noopener noreferrer">
-                                    <img id="contactIco" src={require("../../images/map.png")} alt="gmap" />
-                                    3000 Burge Rd, Stockton, CA 95215
-                            </a></div>
-                            </Fade>
-                        </div>
                     </Col>
                     <Col size="md-6">
                         {!this.state.submitted ? (
-                            <Slide right>
-                                <div id="contactTitle">
-                                    Contact
+                            <Fade>
+                                <div className="card">
+                                    <Slide right>
+                                        <div id="contactTitle">
+                                            Contact
                                     </div>
-                                <div id="contactBody">
-                                    <p>Sign up to be part of mailing list and be notified of upcoming events at
-                                        the farm like cherry season opening.
+                                        <div id="contactBody">
+                                            <p>Sign up to be part of mailing list and be notified of upcoming events at
+                                                the farm like cherry season opening.
                                         </p>
+                                        </div>
+                                        <form onSubmit={this.handleSubmit}>
+                                            <div className="form-group">
+                                                <label className="contactLabel">Name: </label>
+                                                <input type="text" className="form-control mt-1 mb-3" name="name" onChange={this.handleChange} required />
+
+                                                <label className="contactLabel">Email: </label>
+                                                <input type="email" className="form-control mt-1 mb-3" name="email" onChange={this.handleChange} required />
+
+                                            </div>
+                                            <button type="submit"
+                                                className="btn contactLabel submitBtn"
+                                                value="Submit"
+                                                data-toggle="modal"
+                                                data-target="#confirmation"
+                                            >Sign Up</button>
+                                        </form>
+                                    </Slide>
                                 </div>
-                                <form onSubmit={this.handleSubmit}>
-                                    <div className="form-group">
-                                        <label className="contactLabel">Name: </label>
-                                        <input type="text" className="form-control mt-1 mb-3" name="name" onChange={this.handleChange} required />
+                            </Fade>
 
-                                        <label className="contactLabel">Email: </label>
-                                        <input type="email" className="form-control mt-1 mb-3" name="email" onChange={this.handleChange} required />
-
-                                    </div>
-                                    <button type="submit"
-                                        className="btn contactLabel submitBtn"
-                                        value="Submit"
-                                        data-toggle="modal"
-                                        data-target="#confirmation"
-                                    >Sign Up</button>
-                                </form>
-                            </Slide>
                         ) : (
                                 <div className="modal-body">
                                     <Slide top>
