@@ -43,12 +43,12 @@ class Contact extends React.Component {
             <Container>
                 <Row>
                     <Col size="md-6">
-                        <Fade duration={1000}>
+                        <Slide left>
                             <div className="card">
                                 <Fade left>
                                     <div id="contactTitle">
                                         Oscar Richard Grado
-                            </div>
+                                    </div>
                                 </Fade>
                                 <div id="contactBody">
                                     <Fade left delay={500}>
@@ -58,27 +58,27 @@ class Contact extends React.Component {
                                         <div><a href="tel:+12098171650" target="_blank" rel="noopener noreferrer">
                                             <img id="contactIco" src={require("../../images/telephone.png")} alt="tele" />
                                             (209) 817-1650
-                            </a></div>
+                                        </a></div>
                                     </Fade>
                                     <Fade left delay={900}>
                                         <div><a href="mailto:burgeroadfarm@gmail.com" target="_blank" rel="noopener noreferrer">
                                             <img id="contactIco" src={require("../../images/email.png")} alt="mail" />
                                             burgeroadfarm@gmail.com
-                            </a></div>
+                                        </a></div>
                                     </Fade>
                                     <Fade left delay={1100}>
                                         <div><a href="https://goo.gl/maps/FVcHZag9vZJ2" target="_blank" rel="noopener noreferrer">
                                             <img id="contactIco" src={require("../../images/map.png")} alt="gmap" />
                                             3000 Burge Rd, Stockton, CA 95215
-                            </a></div>
+                                        </a></div>
                                     </Fade>
                                 </div>
                             </div>
-                        </Fade>
+                        </Slide>
                     </Col>
                     <Col size="md-6">
                         {!this.state.submitted ? (
-                            <Fade>
+                            <Slide right>
                                 <div className="card">
                                     <Slide right>
                                         <div id="contactTitle">
@@ -98,7 +98,8 @@ class Contact extends React.Component {
                                                 <input type="email" className="form-control mt-1 mb-3" name="email" onChange={this.handleChange} required />
 
                                             </div>
-                                            <button type="submit"
+                                            <button
+                                                type="submit"
                                                 className="btn contactLabel submitBtn"
                                                 value="Submit"
                                                 data-toggle="modal"
@@ -107,7 +108,7 @@ class Contact extends React.Component {
                                         </form>
                                     </Slide>
                                 </div>
-                            </Fade>
+                            </Slide>
 
                         ) : (
                                 <div className="modal-body">

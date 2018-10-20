@@ -13,6 +13,22 @@ class Media extends React.Component {
             <Container>
                 <Row>
                     <Col size="xl-12">
+                        <div className="card-deck">
+                            <div className="card">
+                                <iframe
+                                title="visitStocktonInterview"
+                                    width="100%"
+                                    height="315"
+                                    src="https://www.youtube.com/embed/1Zl1DPrWVyE"
+                                    frameBorder="0"
+                                    allow="autoplay; encrypted-media">
+                                </iframe>
+                            </div>
+                            <div className="card">
+                                bye
+                            </div>
+                        </div>
+
                         <Fade top>
                             <Gallery
                                 images={IMAGES}

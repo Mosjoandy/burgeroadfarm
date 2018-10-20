@@ -37,15 +37,24 @@ const Directions = () => (
                 </Fade>
             </Col>
             <Col size="xl-5">
-                <Fade right>
+                <Fade delay={1000} right>
                     <div id="directionsBody">
                         <div className="mapouter card">
                             <div className="gmap_canvas">
-                                <iframe title="gmapBRF" width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=burge%20road%20farm&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0">
+                                <iframe
+                                    title="gmapBRF"
+                                    width="100%"
+                                    height="100%"
+                                    id="gmap_canvas"
+                                    src="https://maps.google.com/maps?q=burge%20road%20farm&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                    frameBorder="0"
+                                    scrolling="no"
+                                    marginHeight="0"
+                                    marginWidth="0">
                                 </iframe>
                             </div>
                         </div>
-                        <div className="card-footer bg-white">
+                        <div className="card-footer card">
                             <a className="text-center " href="https://goo.gl/maps/FVcHZag9vZJ2" target="_blank" rel="noopener noreferrer">
                                 <img id="contactIco" src={require("../../images/map.png")} alt="gmap" />
                                 3000 Burge Rd, Stockton, CA 95215
