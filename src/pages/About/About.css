@@ -21,3 +21,9 @@
 #aboutPic2 {
     height: 45vh;
 }
+
+@media only screen and (max-width: 600px) {
+    #vetOwned {
+        width: 15rem;
+    }
+}

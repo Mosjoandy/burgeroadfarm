@@ -56,24 +56,28 @@ class Emailer extends React.Component {
             <Row>
                 <Col size="md-7">
                     <Fade>
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Email</th>
-                                    <th className="text-center">Remove</th>
-                                </tr>
-                                {this.state.mailerList.map((mailer) =>
-                                    <tr key={mailer.id}>
-                                        <Fade delay={1000} duration={2000}>
-                                            <td>{mailer.name}</td>
-                                            <td>{mailer.email}</td>
-                                            <td className="text-center"><button type="button" className="btn btn-danger" onClick={() => this.removeItem(mailer.id)}>X</button></td>
-                                        </Fade>
+                        <div className="card">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th className="text-center">Remove</th>
                                     </tr>
-                                )}
-                            </tbody>
-                        </table>
+                                    {this.state.mailerList.map((mailer) =>
+                                        <Fade>
+                                            <tr key={mailer.id}>
+
+                                                <td>{mailer.name}</td>
+                                                <td>{mailer.email}</td>
+                                                <td className="text-center"><button type="button" className="btn btn-danger" onClick={() => this.removeItem(mailer.id)}>X</button></td>
+
+                                            </tr>
+                                        </Fade>
+                                    )}
+                                </tbody>
+                            </table>
+                        </div>
                     </Fade>
                 </Col>
                 <Col size="md-5">
