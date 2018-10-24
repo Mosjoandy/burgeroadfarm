@@ -56,7 +56,6 @@ class Login extends React.Component {
             <Container>
                 {
                     this.state.admin === true
-
                     ?
                         <div>
                             <Row>
