@@ -64,8 +64,8 @@ class Emailer extends React.Component {
                                         <th>Email</th>
                                         <th className="text-center">Remove</th>
                                     </tr>
-                                    {this.state.mailerList.map((mailer) =>
-                                        <Fade>
+                                    {this.state.mailerList.map((mailer, index) =>
+                                        <Fade key={index}>
                                             <tr key={mailer.id}>
 
                                                 <td>{mailer.name}</td>

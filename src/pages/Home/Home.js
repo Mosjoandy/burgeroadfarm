@@ -15,15 +15,25 @@ const Home = () => (
             <Slide bottom>
 
               <div id="homeTitle">
-                WE ARE CLOSED FOR THE 2018 SEASON
-        </div>
+                Cherry Season is Coming!
+              </div>
 
             </Slide>
             <Slide bottom>
 
               <div id="homeBody">
-                <p>our cherries are sold out!</p>
-                <p>We want to thank EVERYONE for coming out and supporting our little farm!</p>
+
+                <p>Please stay tuned for season opening announcement!</p>
+                <p>Follow us on</p>
+                <p>
+                  <span><a rel="noopener noreferrer" href="https://www.facebook.com/burgeroadfarm/" target="_blank">
+                    <img id="homeIcon" src={require("../../images/facebook.png")} alt="facebook burge road farm" />
+                  </a></span>
+                  {} and {}
+                  <span><a rel="noopener noreferrer" href="https://www.instagram.com/burgeroadfarm/" target="_blank">
+                    <img id="homeIcon" src={require("../../images/instagram.png")} alt="instagram burge road farm" />
+                  </a></span>
+                </p>
               </div>
 
             </Slide>
