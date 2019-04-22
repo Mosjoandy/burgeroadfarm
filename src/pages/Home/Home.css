@@ -18,6 +18,24 @@
     margin: 5vh 0 0 0;
 }
 
+#announcePic {
+    width: 45vw;
+    display: block;
+    /* margin-top: 5vh; */
+    margin: 10vh 0 0 0;
+    padding: 0 50px 0 0;
+    transform: rotate(90deg)
+}
+
+@media only screen and (max-width: 600px) {
+    #announcePic {
+        width: 100%;
+        display: block;
+        /* margin-top: 5vh; */
+        margin: 10vh 0 5vh 0;
+        transform: rotate(90deg)
+    }
+}
 #homeIcon {
     width: 3rem;
 

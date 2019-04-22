@@ -39,8 +39,10 @@ const Home = () => (
             </Slide>
             <Bounce>
 
-              <div>
-                <img className="mx-auto" id="cherry" src={require("../../images/cherry.png")} alt="cherryTriple" />
+              <div className="card">
+                {/* <img className="mx-auto" id="cherry" src={require("../../images/cherry.png")} alt="cherryTriple" /> */}
+                <img className="mx-auto" id="announcePic" src={require("../../images/announcementpic1.jpg")} alt="front page pic" />
+
               </div>
 
             </Bounce>
