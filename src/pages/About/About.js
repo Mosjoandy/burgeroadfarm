@@ -16,7 +16,7 @@ const About = () => (
                         <div id="aboutBody">
                             <p>We are a small, family owned and operated farm located  in Stockton, California.</p>
                             <br />
-                            <p>Our mission is to provide organically fruits and vegetables for everyone to enjoy.
+                            <p>Our mission is to provide organically grown fruits and vegetables for everyone to enjoy.
                             We want to help people get back in touch with the food they eat and have a fun time
                             at the farm!
                         </p>

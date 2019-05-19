@@ -41,8 +41,11 @@ const Home = () => (
 
               <div className="card">
                 {/* <img className="mx-auto" id="cherry" src={require("../../images/cherry.png")} alt="cherryTriple" /> */}
-                <img className="mx-auto" id="announcePic" src={require("../../images/announcementpic1.jpg")} alt="front page pic" />
-
+                <img className="mx-auto" id="announcePic" src={require("../../images/progression1.jpg")} alt="front page pic1" />
+                <br />
+                <img className="mx-auto" id="announcePic" src={require("../../images/progression2.jpg")} alt="front page pic2" />
+                <br />
+                <img className="mx-auto" id="announcePic" src={require("../../images/progression3.jpg")} alt="front page pic3" />
               </div>
 
             </Bounce>
