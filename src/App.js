@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
 import Events from "./pages/Events/Events";
 import Contact from "./pages/Contact/Contact";
+import FullContact from "./pages/Contact/FullContact";
 import About from "./pages/About/About";
 import Directions from "./pages/Directions/Directions";
 import Media from "./pages/Media/Media";
@@ -30,6 +31,7 @@ class App extends React.Component {
             <Route exact path="/directions" component={Directions} />
             <Route exact path="/media" component={Media} />
             <Route exact path="/bossjontue" component={Login} />
+            <Route exact path="/fullcontact" component={FullContact} />
             <Route component={NoMatch} />
           </Switch>
         </div>
