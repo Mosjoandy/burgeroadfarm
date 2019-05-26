@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.css";
 import { Container, Col, Row } from "../../components/grid";
 import Slide from "react-reveal/Slide";
-import Bounce from 'react-reveal/Bounce';
+// import Bounce from 'react-reveal/Bounce';
 import Fade from "react-reveal/Fade";
 
 const Home = () => (
@@ -15,7 +15,7 @@ const Home = () => (
             <Slide bottom>
 
               <div id="homeTitle">
-                Cherry Season is Coming!
+                Cherry Season is almost here!
               </div>
 
             </Slide>
@@ -23,8 +23,8 @@ const Home = () => (
 
               <div id="homeBody">
 
-                <p>Please stay tuned for season opening announcement!</p>
-                <p>Follow us on</p>
+                <p>We will be open on June 1, 2019.</p>
+                <p>Follow us for updates on</p>
                 <p>
                   <span><a rel="noopener noreferrer" href="https://www.facebook.com/burgeroadfarm/" target="_blank">
                     <img id="homeIcon" src={require("../../images/facebook.png")} alt="facebook burge road farm" />
@@ -37,18 +37,21 @@ const Home = () => (
               </div>
 
             </Slide>
-            <Bounce>
+            <Slide bottom>
 
               <div className="card">
+                <img className="mx-auto" id="announcePic" src={require("../../images/cherriesNow.jpg")} alt="cherryNow" />
+
                 {/* <img className="mx-auto" id="cherry" src={require("../../images/cherry.png")} alt="cherryTriple" /> */}
-                <img className="mx-auto" id="announcePic" src={require("../../images/progression1.jpg")} alt="front page pic1" />
+
+                {/* <img className="mx-auto" id="announcePic" src={require("../../images/progression1.jpg")} alt="front page pic1" />
                 <br />
                 <img className="mx-auto" id="announcePic" src={require("../../images/progression2.jpg")} alt="front page pic2" />
                 <br />
-                <img className="mx-auto" id="announcePic" src={require("../../images/progression3.jpg")} alt="front page pic3" />
+                <img className="mx-auto" id="announcePic" src={require("../../images/progression3.jpg")} alt="front page pic3" /> */}
               </div>
 
-            </Bounce>
+            </Slide>
           </div>
         </Fade>
       </Col>
