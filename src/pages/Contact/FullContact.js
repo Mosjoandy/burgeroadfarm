@@ -35,8 +35,12 @@ class Contact extends React.Component {
         mailer.push(info);
 
         this.setState({ submitted: true });
-        
-        setTimeout( console.log("poops"), 10000);
+        setTimeout(() => {
+            this.setState({
+                submitted: false,
+            });
+        }, 2000);
+        event.target.reset()
     }
 
     render() {
@@ -47,7 +51,7 @@ class Contact extends React.Component {
                         {!this.state.submitted ? (
                             <Slide bottom>
                                 <div className="card">
-                                    <Slide bottom>
+                                    <Fade delay={1000}>
                                         <div className="text-center" id="contactTitle">
                                             Contact
                                     </div>
@@ -56,13 +60,13 @@ class Contact extends React.Component {
                                                 Get updates and event information!
                                             </p>
                                         </div>
-                                        <form onSubmit={this.handleSubmit}>
+                                        <form onSubmit={this.handleSubmit} className="mx-auto formGroup">
                                             <div className="form-group">
                                                 <label className="contactLabel"></label>
                                                 <input 
                                                 type="text" 
                                                 placeholder="Enter Your Name Here" 
-                                                className="form-control mt-1 mb-3 input-text
+                                                className="form-control mt-1 mb-3 input-text 
                                                 "
                                                 name="name" 
                                                 onChange={this.handleChange} 
@@ -72,7 +76,7 @@ class Contact extends React.Component {
                                                 <input 
                                                 type="email" 
                                                 placeholder="Enter Your Email Here" 
-                                                className="form-control mt-1 mb-3 input-text
+                                                className="form-control mt-1 mb-3 input-text 
                                                 "
                                                 name="email" 
                                                 onChange={this.handleChange} 
@@ -90,7 +94,7 @@ class Contact extends React.Component {
                                             </button>
                                             </div>
                                         </form>
-                                    </Slide>
+                                    </Fade>
                                 </div>
                             </Slide>
 

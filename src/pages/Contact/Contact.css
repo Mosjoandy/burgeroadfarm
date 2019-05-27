@@ -20,6 +20,11 @@
 
 .input-text {
     text-align: center;
+    /* width: 50%; */
+}
+
+.formGroup {
+    width: 50%;
 }
 
 .submitBtn:hover {
