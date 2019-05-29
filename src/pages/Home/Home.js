@@ -15,17 +15,25 @@ const Home = () => (
             <Slide bottom>
 
               <div id="homeTitle">
-                Cherry Season is almost here!
+                Cherry Picking Opening Day
+            <br/>
+                  Saturday, June 1st
+        
               </div>
 
             </Slide>
             <Slide bottom>
 
               <div id="homeBody">
+                <p></p>
+                <p>We will be open 8AM - 4PM on weekends</p>
+                <p>And by appointment only on weekdays</p>
+                <p>We will stay open until cherries sell out</p>
+                <div id="homeTitle2">
+                  CASH ONLY PLEASE!
+              </div>
+                <p>Please follow us on  {}
 
-                <p>We will be open on June 1, 2019.</p>
-                <p>Follow us for updates on</p>
-                <p>
                   <span><a rel="noopener noreferrer" href="https://www.facebook.com/burgeroadfarm/" target="_blank">
                     <img id="homeIcon" src={require("../../images/facebook.png")} alt="facebook burge road farm" />
                   </a></span>
@@ -33,7 +41,8 @@ const Home = () => (
                   <span><a rel="noopener noreferrer" href="https://www.instagram.com/burgeroadfarm/" target="_blank">
                     <img id="homeIcon" src={require("../../images/instagram.png")} alt="instagram burge road farm" />
                   </a></span>
-                </p>
+
+                  {}    for updates!</p>
               </div>
 
             </Slide>
