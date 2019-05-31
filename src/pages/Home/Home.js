@@ -26,10 +26,10 @@ const Home = () => (
 
               <div id="homeBody">
                 <p></p>
-                <p>We will be open 8AM - 4PM on weekends</p>
-                <p>And by appointment only on weekdays</p>
-                <p>We will stay open until cherries sell out</p>
+                <div id="homeTitle2">Open 8AM - 4PM until cherries sell out!</div>
+                {/* <p>We will stay open until cherries sell out</p> */}
                 <div id="homeTitle2">
+                $3.50 / lb <br />
                   CASH ONLY PLEASE!
               </div>
                 <p>Please follow us on  {}
@@ -42,7 +42,7 @@ const Home = () => (
                     <img id="homeIcon" src={require("../../images/instagram.png")} alt="instagram burge road farm" />
                   </a></span>
 
-                  {}    for updates!</p>
+                  {}    for the latest updates!</p>
               </div>
 
             </Slide>
