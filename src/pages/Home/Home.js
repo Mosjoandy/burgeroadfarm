@@ -29,6 +29,7 @@ const Home = () => (
                 <div id="homeTitle2">Open 8AM - 4PM until cherries sell out!</div>
                 {/* <p>We will stay open until cherries sell out</p> */}
                 <div id="homeTitle2">
+                Organically Grown <br />
                 $3.50 / lb <br />
                   CASH ONLY PLEASE!
               </div>

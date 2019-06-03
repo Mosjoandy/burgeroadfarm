@@ -32,6 +32,11 @@
     /* transform: rotate(90deg) */
 }
 
+#homeIcon {
+    width: 3rem;
+
+}
+
 @media only screen and (max-width: 600px) {
     #announcePic {
         width: 100%;
@@ -40,8 +45,16 @@
         /* margin: 10vh 0 5vh 0; */
         /* transform: rotate(90deg) */
     }
-}
-#homeIcon {
-    width: 3rem;
 
+    #homeTitle {
+        font-family: 'Special Elite', cursive;
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    #homeTitle2 {
+        font-family: 'Special Elite', cursive;
+        font-size: 1.3rem;
+        text-align: center;
+    }
 }
