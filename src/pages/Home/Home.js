@@ -15,9 +15,9 @@ const Home = () => (
             <Slide bottom>
 
               <div id="homeTitle">
-                Cherry Picking Opening Day
+                Last Day For Cherry Picking
             <br/>
-                  Saturday, June 1st
+                  Saturday, June 15th
         
               </div>
 
@@ -26,7 +26,7 @@ const Home = () => (
 
               <div id="homeBody">
                 <p></p>
-                <div id="homeTitle2">Open 8AM - 4PM until cherries sell out!</div>
+                <div id="homeTitle2">Open 8AM - 4PM</div>
                 {/* <p>We will stay open until cherries sell out</p> */}
                 <div id="homeTitle2">
                 Organically Grown <br />
@@ -50,7 +50,7 @@ const Home = () => (
             <Slide bottom>
 
               <div className="card">
-                <img className="mx-auto" id="announcePic" src={require("../../images/finalform.jpg")} alt="cherryNow" />
+                <img className="mx-auto" id="announcePic" src={require("../../images/finalfinalfinalform.jpg")} alt="cherryNow" />
 
                 {/* <img className="mx-auto" id="cherry" src={require("../../images/cherry.png")} alt="cherryTriple" /> */}
 
