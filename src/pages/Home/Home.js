@@ -15,9 +15,8 @@ const Home = () => (
             <Slide bottom>
 
               <div id="homeTitle">
-                Last Day For Cherry Picking
-            <br/>
-                  Saturday, June 15th
+              
+                  Please call for availability
         
               </div>
 
@@ -26,7 +25,7 @@ const Home = () => (
 
               <div id="homeBody">
                 <p></p>
-                <div id="homeTitle2">Open 8AM - 4PM</div>
+                {/* <div id="homeTitle2">Open 8AM - 4PM</div> */}
                 {/* <p>We will stay open until cherries sell out</p> */}
                 <div id="homeTitle2">
                 Organically Grown <br />
