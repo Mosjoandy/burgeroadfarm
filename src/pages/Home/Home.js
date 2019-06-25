@@ -16,7 +16,7 @@ const Home = () => (
 
               <div id="homeTitle">
               
-                  Please call for availability
+                  We are closed for the season!
         
               </div>
 
@@ -28,9 +28,10 @@ const Home = () => (
                 {/* <div id="homeTitle2">Open 8AM - 4PM</div> */}
                 {/* <p>We will stay open until cherries sell out</p> */}
                 <div id="homeTitle2">
-                Organically Grown <br />
-                $3.50 / lb <br />
-                  CASH ONLY PLEASE!
+                Thank you everyone for supporting us!
+                <br />
+                <br />
+                 
               </div>
                 <p>Please follow us on  {}
 
@@ -42,7 +43,7 @@ const Home = () => (
                     <img id="homeIcon" src={require("../../images/instagram.png")} alt="instagram burge road farm" />
                   </a></span>
 
-                  {}    for the latest updates!</p>
+                  {}    for future events!</p>
               </div>
 
             </Slide>
