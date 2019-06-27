@@ -50,7 +50,7 @@ const Home = () => (
             <Slide bottom>
 
               <div className="card">
-                <img className="mx-auto" id="announcePic" src={require("../../images/finalfinalfinalform.jpg")} alt="cherryNow" />
+                <img className="mx-auto" id="announcePic" src={require("../../images/closingtime.jpg")} alt="cherryNow" />
 
                 {/* <img className="mx-auto" id="cherry" src={require("../../images/cherry.png")} alt="cherryTriple" /> */}
 
