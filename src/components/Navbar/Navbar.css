@@ -7,13 +7,13 @@
 #navButtons {
     padding: 0 30px;
     border-right: 1px solid black;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     font-weight: bold;
 }
 
 #navButtonsLast {
     padding: 0 30px;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     font-weight: bold;
 }
 

@@ -1,5 +1,5 @@
 body {
-  background: url("./images/woodbg.jpg"); 
+  /* background: url("./images/woodbg.jpg");  */
   margin: 0;
   padding: 0;
   font-family: sans-serif;
@@ -10,7 +10,8 @@ body {
 }
 
 .card {
-  background-image: url("./images/paperbg.png"); 
+  /* background-image: url("./images/paperbg.png");  */
   border: none;
   padding: 1rem 1rem;
+  background-color: #F9ECE1
 }

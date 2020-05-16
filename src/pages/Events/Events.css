@@ -1,5 +1,27 @@
 #eventsTitle {
     font-family: 'Special Elite', cursive;
-    font-size: 7vh;
+    font-size: 3vh;
     text-align: center;
+}
+
+#eventBody {
+    font-family: 'Special Elite', cursive;
+    font-size: 3vh;
+    text-align: center;
+}
+
+#eventCard {
+    width: 70%;
+    margin: auto;
+    background-color: #F9ECE1
+}
+
+@media only screen and (max-width: 600px) {
+    #eventCard {
+        width: 100%;
+        display: block;
+        /* margin-top: 5vh; */
+        /* margin: 10vh 0 5vh 0; */
+        /* transform: rotate(90deg) */
+    }
 }

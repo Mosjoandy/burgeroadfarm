@@ -16,10 +16,9 @@ const Home = () => (
 
               <div id="homeTitle">
 
-                <span role="img" aria-label="cherry">🍒</span>Cherry Season Coming Soon!<span role="img" aria-label="cherry">🍒</span>
+                <span role="img" aria-label="cherry">🍒</span><b>Cherry Season Opens Memorial Day Weekend</b><span role="img" aria-label="cherry">🍒</span>
 
               </div>
-
             </Slide>
             <Slide bottom>
 
@@ -28,11 +27,11 @@ const Home = () => (
                 {/* <div id="homeTitle2">Open 8AM - 4PM</div> */}
                 {/* <p>We will stay open until cherries sell out</p> */}
 
-                 <br />
+                <br />
                 <div id="homeTitle3">
-                  COVID-19 Update:
-                <div id="homeBody2">
-                    For everyone's safety and to practice social distancing, we will be open for cherry picking <b>BY APPOINTMENT ONLY</b> until further notice. Please stay tuned for more details and season opening dates.
+                  <u>COVID-19 Update:</u>
+                  <div id="homeTitle3">
+                    No appointments necessary, but social distancing will be required!
                 </div>
                   <br />
                   <div id="homeTitle2">
@@ -43,11 +42,7 @@ const Home = () => (
                     <span><a rel="noopener noreferrer" href="https://www.instagram.com/burgeroadfarm/" target="_blank">
                       <img id="homeIcon" src={require("../../images/instagram.png")} alt="instagram burge road farm" />
                     </a></span> for the latest updates.
-
-
                   </div>
-
-
                 </div>
                 {/* <p>Please follow us on  {}
 
@@ -68,7 +63,7 @@ const Home = () => (
             <Slide bottom>
 
               <div className="card">
-                <img className="mx-auto" id="announcePic" src={require("../../images/early_2020.jpg")} alt="cherryNow" />
+                <img className="mx-auto" id="announcePic" src={require("../../images/opening_2020.jpg")} alt="cherryNow" />
 
                 {/* <img className="mx-auto" id="cherry" src={require("../../images/cherry.png")} alt="cherryTriple" /> */}
 

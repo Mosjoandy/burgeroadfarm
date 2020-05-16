@@ -1,16 +1,16 @@
 #homeTitle {
     font-family: 'Special Elite', cursive;
-    font-size: 6vh;
+    font-size: 3vh;
     text-align: center;
 }
 #homeTitle2 {
     font-family: 'Special Elite', cursive;
-    font-size: 5vh;
+    font-size: 3h;
     text-align: center;
 }
 #homeTitle3 {
     font-family: 'Special Elite', cursive;
-    font-size: 5vh;
+    font-size: 3vh;
     text-align: center;
 }
 
@@ -21,7 +21,8 @@
     /* font-variant: small-caps;  */
 }
 #homeBody2 {
-    font-family: 'Shadows Into Light Two', cursive;
+    /* font-family: 'Shadows Into Light Two', cursive; */
+    font-family: 'Special Elite', cursive;
     font-size: 4vh;
     text-align: center;
     /* font-variant: small-caps;  */
@@ -35,7 +36,7 @@
 }
 
 #announcePic {
-    width: 50%;
+    width: 30%;
     display: block;
     /* margin-top: 5vh; */
     /* margin: 10vh 0 0 0; */
@@ -44,7 +45,7 @@
 }
 
 #homeIcon {
-    width: 3rem;
+    width: 2rem;
 
 }
 

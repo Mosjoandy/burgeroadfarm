@@ -35,10 +35,12 @@ class Login extends React.Component {
                 this.setState({ userID: user.uid });
                 if (this.state.userID === "aXKEZAlJKpdlb0wm1NWEFHHQgFh1") {
                     this.setState({ admin: true })
-                } else if (this.state.userID === "bygu8YfsSWhtW6aqcU8ZuQGNWws1") {
+                    // console.log(user.uid)
+                } else if (this.state.userID === "zpCqRUM1awVN9k0Cvogljwc3Cj02") {
                     this.setState({ admin: true })
                 } else {
-                    this.setState({ admin: false })
+                    this.setState({ admin: false }) 
+                    // console.log(user.uid)   
                 }
             });
     };
