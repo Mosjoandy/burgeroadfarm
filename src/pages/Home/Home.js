@@ -15,36 +15,42 @@ const Home = () => (
             <Slide bottom>
 
               <div id="homeTitle">
-
-                <span role="img" aria-label="cherry">🍒</span><b>Cherry Season Opens Memorial Day Weekend</b><span role="img" aria-label="cherry">🍒</span>
-
+                <p>
+                  <span role="img" aria-label="cherry">🍒</span><b>2020 U-Pick Cherry Season now open!</b><span role="img" aria-label="cherry">🍒</span>
+                </p>
+                <p>
+                  $3.50/pound
+                </p>
               </div>
             </Slide>
             <Slide bottom>
-
-              <div id="homeBody">
-
-                {/* <div id="homeTitle2">Open 8AM - 4PM</div> */}
-                {/* <p>We will stay open until cherries sell out</p> */}
-
+              <div id="homeTitle">
+                <p>
+                  Open Everyday 8AM - 4PM
+                </p>
+                <p>
+                  We will stay open until cherries sell out
+                </p>
                 <br />
-                <div id="homeTitle3">
+                <p>
                   <u>COVID-19 Update:</u>
-                  <div id="homeTitle3">
-                    No appointments necessary, but social distancing will be required!
-                </div>
-                  <br />
-                  <div id="homeTitle2">
-                    Please follow us on  <span><a rel="noopener noreferrer" href="https://www.facebook.com/burgeroadfarm/" target="_blank">
-                      <img id="homeIcon" src={require("../../images/facebook.png")} alt="facebook burge road farm" />
-                    </a></span>
-                    {} {}
-                    <span><a rel="noopener noreferrer" href="https://www.instagram.com/burgeroadfarm/" target="_blank">
-                      <img id="homeIcon" src={require("../../images/instagram.png")} alt="instagram burge road farm" />
-                    </a></span> for the latest updates.
+                </p>
+                <p>
+                  No appointments necessary, but social distancing will be required!
+                    </p>
+              </div>
+              <br />
+              <div id="homeTitle2">
+                Please follow us on  <span><a rel="noopener noreferrer" href="https://www.facebook.com/burgeroadfarm/" target="_blank">
+                  <img id="homeIcon" src={require("../../images/facebook.png")} alt="facebook burge road farm" />
+                </a></span>
+                {} {}
+                <span><a rel="noopener noreferrer" href="https://www.instagram.com/burgeroadfarm/" target="_blank">
+                  <img id="homeIcon" src={require("../../images/instagram.png")} alt="instagram burge road farm" />
+                </a></span> for the latest updates.
                   </div>
-                </div>
-                {/* <p>Please follow us on  {}
+
+              {/* <p>Please follow us on  {}
 
                   <span><a rel="noopener noreferrer" href="https://www.facebook.com/burgeroadfarm/" target="_blank">
                     <img id="homeIcon" src={require("../../images/facebook.png")} alt="facebook burge road farm" />
@@ -57,7 +63,7 @@ const Home = () => (
                   {}    for future events!
                   
                   </p> */}
-              </div>
+
 
             </Slide>
             <Slide bottom>
@@ -79,7 +85,7 @@ const Home = () => (
         </Fade>
       </Col>
     </Row>
-  </Container>
+  </Container >
 );
 
 export default Home;

@@ -40,6 +40,10 @@ const Directions = () => (
                 <Fade delay={1000} right>
                     <div id="directionsBody">
                         <div className="mapouter card">
+                            <a className="text-center " href="https://goo.gl/maps/FVcHZag9vZJ2" target="_blank" rel="noopener noreferrer">
+                                <img id="contactIco" src={require("../../images/map.png")} alt="gmap" />
+                                3000 Burge Rd, Stockton, CA 95215
+                            </a>
                             <div className="gmap_canvas">
                                 <iframe
                                     title="gmapBRF"
@@ -53,12 +57,6 @@ const Directions = () => (
                                     marginWidth="0">
                                 </iframe>
                             </div>
-                        </div>
-                        <div className="card-footer card">
-                            <a className="text-center " href="https://goo.gl/maps/FVcHZag9vZJ2" target="_blank" rel="noopener noreferrer">
-                                <img id="contactIco" src={require("../../images/map.png")} alt="gmap" />
-                                3000 Burge Rd, Stockton, CA 95215
-                            </a>
                         </div>
                     </div>
                 </Fade>
