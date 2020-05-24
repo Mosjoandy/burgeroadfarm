@@ -72,7 +72,7 @@ const Home = () => (
             <Slide bottom>
 
               <div className="card">
-                <img className="mx-auto" id="announcePic" src={require("../../images/opening_2020.jpg")} alt="cherryNow" />
+                <img className="mx-auto" id="announcePic" src={require("../../images/closingtime2020.jpeg")} alt="cherryNow" />
 
                 {/* <img className="mx-auto" id="cherry" src={require("../../images/cherry.png")} alt="cherryTriple" /> */}
 
@@ -88,7 +88,7 @@ const Home = () => (
         </Fade>
       </Col>
     </Row>
-  </Container >
+  </Container>
 );
 
 export default Home;
