@@ -16,15 +16,18 @@ const Home = () => (
 
               <div id="homeTitle">
                 <p>
-                  <span role="img" aria-label="cherry">🍒</span><b>2020 U-Pick Cherry Season now open!</b><span role="img" aria-label="cherry">🍒</span>
+                  <span role="img" aria-label="cherry">🍒</span><b>WE ARE SOLD OUT AND ARE NOW CLOSED FOR THE 2020 SEASON</b><span role="img" aria-label="cherry">🍒</span>
                 </p>
                 <p>
-                  $3.50/pound
+                  We want to thank everyone who came to our farm and made this season our best one yet! 
+                </p>
+                <p>
+                  You guys are awesome!
                 </p>
               </div>
             </Slide>
             <Slide bottom>
-              <div id="homeTitle">
+              {/* <div id="homeTitle">
                 <p>
                   Open Everyday 8AM - 4PM
                 </p>
@@ -39,7 +42,7 @@ const Home = () => (
                   No appointments necessary, but social distancing will be required!
                     </p>
               </div>
-              <br />
+              <br /> */}
               <div id="homeTitle2">
                 Please follow us on  <span><a rel="noopener noreferrer" href="https://www.facebook.com/burgeroadfarm/" target="_blank">
                   <img id="homeIcon" src={require("../../images/facebook.png")} alt="facebook burge road farm" />
@@ -47,7 +50,7 @@ const Home = () => (
                 {} {}
                 <span><a rel="noopener noreferrer" href="https://www.instagram.com/burgeroadfarm/" target="_blank">
                   <img id="homeIcon" src={require("../../images/instagram.png")} alt="instagram burge road farm" />
-                </a></span> for the latest updates.
+                </a></span> for the next season's updates.
                   </div>
 
               {/* <p>Please follow us on  {}

@@ -40,7 +40,7 @@ const Directions = () => (
                 <Fade delay={1000} right>
                     <div id="directionsBody">
                         <div className="mapouter card">
-                            <a className="text-center " href="https://goo.gl/maps/FVcHZag9vZJ2" target="_blank" rel="noopener noreferrer">
+                            <a className="text-center " samesite="none" href="https://goo.gl/maps/FVcHZag9vZJ2" target="_blank" rel="noopener noreferrer">
                                 <img id="contactIco" src={require("../../images/map.png")} alt="gmap" />
                                 3000 Burge Rd, Stockton, CA 95215
                             </a>
@@ -54,7 +54,9 @@ const Directions = () => (
                                     frameBorder="0"
                                     scrolling="no"
                                     marginHeight="0"
-                                    marginWidth="0">
+                                    marginWidth="0"
+                                    samesite="none">
+                                    
                                 </iframe>
                             </div>
                         </div>

@@ -16,7 +16,7 @@ class Media extends React.Component {
                         <p id="homeBody">
                             Videos
                         </p>
-                        <div className="card-deck">
+                        <div className="card-deck text-center">
 
                             <div className="card">
                                 <iframe
@@ -27,6 +27,9 @@ class Media extends React.Component {
                                     frameBorder="0"
                                     allow="autoplay; encrypted-media">
                                 </iframe>
+                                <span className="space-top">
+                                    May 24, 2017
+                                </span>
                             </div>
                             <div className="card">
                                 <iframe
@@ -37,6 +40,9 @@ class Media extends React.Component {
                                     frameBorder="0"
                                     allow="autoplay; encrypted-media">
                                 </iframe>
+                                <span className="space-top">
+                                    July 14, 2014
+                                </span>
                             </div>
                         </div>
 
